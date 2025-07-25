@@ -22,7 +22,7 @@ function App() {
     setPeliculasRecomendadas([]);
     setPeliculasFiltradas([]);
     try {
-      const response = await fetch('/api/recomendaciones', {
+      const response = await fetch('https://recomendaciones-backend.onrender.com/api/recomendaciones', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
